@@ -11,4 +11,8 @@ export class AppService {
   create(dto: CreateUserDto) {
     return this.userModel.create(dto);
   }
+
+  getAllUsers() {
+    return this.userModel.find();
+  }
 }
